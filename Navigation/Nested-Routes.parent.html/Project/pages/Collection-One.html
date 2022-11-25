@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>MyTubeProject</title>
+  </head>
+  <body>
+    <!--Index.html is the home page of our site-->
+    <nav>
+      <a href="../index.html">Home</a>
+      <!--["./index.html"] declares a path to the index.html file-->
+      <a href="./pages/Collection-One.html">Collection One</a>
+      <!--["./pages/Collection-One.html"] declares a path to the Collection-One.html file-->
+      <a href="./pages/Collection-Two.html">Collection Two</a>
+      <!--["./pages/Collection-Two.html"] declares a path to the Collection-Two.html file-->
+      <h1>Home</h1>
+    </nav>
+    <aside>
+      "we need to build a ROUTE or a FILE-PATH in order to connect Index.html to
+      our two external Collection Pages in the 'pages' subdirectory"
+      <!--Project>pages>-->
+    </aside>
+    <ul name="Steps">
+      <li>Half Steps</li>
+      <!--a half step is declared via [./]-->
+      <!--a half step takes me to the top of the current directory I am workin in-->
+      <li>Full Steps</li>
+      <!--A full step is declared via [../]-->
+      <!--A full step expands the path from the current working directory to the next parent directory-->
+    </ul>
+  </body>
+</html>

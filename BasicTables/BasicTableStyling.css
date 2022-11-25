@@ -1,0 +1,19 @@
+/*
+CSS commands seem to be ordered in brackets like this
+
+Variable {
+Any commands or changes ie- width:100%;
+}
+
+*/
+
+table {
+  width:100%; /*Determines the width of the table,
+  in this case the attribute is using percentage of page covered in order to define the width.*/
+}
+
+table, th. tr{
+  border:1px solid black; /*Determines the border color of the TABLE/TH/TR*/
+}
+
+/*Use these container syntax's to contain NOTES & COMMENTS in .css*?

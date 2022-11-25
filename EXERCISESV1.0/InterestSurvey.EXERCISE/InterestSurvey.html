@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Making a Survery Form with HTML</title>
+  </head>
+
+  <body>
+  <form>
+    <div>
+      <h1><strong>EMPLOYEE INTERESTS SURVEY FORM</strong></h1>
+    </div>
+    <div>
+      <p>Name;</p>
+        <label for="fname">First name:</label><br />
+        <input
+          type="text"
+          id="fname"
+          name="fname"
+          placeholder="Enter Your Name Here"
+        /><br />
+    </div>
+    <div>
+      <p>Department;</p>
+        <label for="Department">First name:</label><br />
+        <input
+          type="text"
+          id="fname"
+          name="Department"
+          placeholder="Enter Your Department Here"
+        /><br />
+    </div>
+    <div>
+      <p>Tell us a little about yourself...</p><br>
+      <label for="comments"></label><br />
+      <textarea name="comments" rows="8" cols="40">
+	<!--I.the row attribute specifies the amount of lines of text a 
+	<textarea> can contain-->
+	<!--II.cols is the attribute that sets the width, or column usage of the <textarea>-->
+      </textarea>
+
+    </div>
+    <div>
+      <p>Do you exercise at home?</p>
+      <input type="radio" id="Y" name="Y" value="Y" />
+      <label for="Y">YES!</label><br />
+      <input type="radio" id="N" name="N" value="N" />
+      <label for="N">no:(</label><br />
+    </div>
+    <div>
+      <p>How do you like to read about your favorite topic?</p>
+      <input type="checkbox" id="Mobile Apps" name="Mobile Apps" value="Mobile Apps" />
+      <label for="Mobile Apps">Mobile Apps</label><br />
+      <input type="checkbox" id="Online" name="Online" value="Online" />
+      <label for="Online">Online</label><br />
+      <input type="checkbox" id="Books" name="Books" value="Books" />
+      <label for="Books">Books</label>
+      <input type="checkbox" id="Magazines" name="Magazines" value="Magazines" />
+      <label for="Magazines">Magazines</label>
+    </div>
+    <div>
+      <p>What is your favorite movie genre?</p>
+      <label for="FavMovie">FavMovie</label><br /><br />
+  <select id="FavMovie" name="FavMovie" , size="3" placeholder="choose">
+  <!--name="..." is applicable to parent element meaning all the child elements will 
+      recieve name="boxing gloves" attribute.-->
+  <option value="Horror">Horror</option>
+
+  <option value="Romance">Romance</option>
+
+  <option value="Thriller">Thriller</option>
+
+  <option value="Drama" selected>Drama</option>
+  <!--Selected is used to create the default option the <select> will show b4 user input-->
+  <option value="Historical">Historical</option>
+
+  <option value="Action">Action</option>
+  </select>
+    </div>
+  <div><input type="submit" value="Submit Form">
+</form>
+  </body>
+</html>

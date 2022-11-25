@@ -1,0 +1,26 @@
+
+🏋️ Exercise: HTML Tables
+Create a table listing your "favorite" and "not so favorite" things.The table MUST include the following:
+1. Page Header
+2. Table
+3. Table headers for each category (favorite / not favorite)
+4. Five rows
+5. Each row will have two cells. (One cell for "favorite" and "not favorite")
+6. Each cell must include a title, image, and an ordered list of 2-3 reasons why it's your favorite/not favorite thing.
+7. All images should include proper attributes to meet W3C guidelines
+8. Try to use images no larger than 256x256 to keep a "balanced" looking table.
+9. Post a screenshot of your finished exercise in the #post-your-exercises channel on Discord
+
+*NOTE*:
+1. Please do not use topics deemed inappropriate or offensive. This is a fun exercise, keep it friendly 🙏🏼
+2. Save this project! In the next module "Intro to CSS", you will add CSS to this project.
+
+📒 Resources:
+Here's a CSS snippet you can use to get a visual for the table borders. You will learn all about CSS in the next Module. For now, you can use "internal styling" to add the CSS below.
+1. Example - https://s3.amazonaws.com/thinkific/file_uploads/88925/attachments/fa8/d20/ab7/Exercise_-_My_Favs.pdf
+2. How to add CSS (for this example use "internal CSS" styling. You will learn about more proficient methods later)
+COPY/PASTE the CSS below and add it to your "internal" styles.
+table, th, tr, td { border: 1px solid black;}td { padding: 0 10px;}
+2a.https://www.w3schools.com/css/css_howto.asp
+
+COMPLETE & CONTINUE 😊

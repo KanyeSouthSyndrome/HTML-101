@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>VideoUploads.html-Mytube.com</title>
+  </head>
+  <body>
+    <header>
+      <h1>MyTube V.1.0.0.0</h1>
+      <a href="./Index.html">Index.html</a>
+      <a href="../Pages.html/Collection[I].html">Collection I</a>
+      <a href="../Pages.html/Collection{II].html">Collection II</a>
+      <a href="../Pages.html/Collection[III].html">Section III</a>
+      <a href="../Pages.html/Video_Uploads.html">Upload Your Own!</a>
+    </header>
+    <hr />
+    <h2><strong>ADD NEW VIDEOS</strong></h2>
+    <form>
+      <div>
+        <h2>Video Title</h2>
+        <label for="Video-Title"></label><br />
+        <input
+          type="text"
+          id="Video-Title"
+          name="Video-Title"
+          placeholder="Enter Your Title Here"
+        /><br />
+      </div>
+      <hr />
+      <div>
+        <h2>Description</h2>
+        <br />
+        <label for="comments"></label><br />
+        <textarea name="comments" rows="8" cols="40">
+        <!--I.the row attribute specifies the amount of lines of text a 
+        <textarea> can contain-->
+        <!--II.cols is the attribute that sets the width, or column usage of the <textarea>-->
+      </textarea
+        >
+      </div>
+      <div>
+        <h2>Video</h2>
+        <label for="myfile">Upload Video File Here</label>
+        <input type="file" id="myfile" name="myfile" />
+      </div>
+      <div>
+          <h2>Choose Collection..</h2>
+          <label for="CollectionSelect"></label><br /><br />
+      <select id="CollectionSelect" name="CollectionSelect" , size="3" placeholder="choose">
+      <!--name="..." is applicable to parent element meaning all the child elements will 
+          recieve name="boxing gloves" attribute.-->
+      <option value="CollectionI">CollectionI</option>
+    
+      <option value="CollectionII">CollectionII</option>
+    
+      <option value="CollectionIII" selected>CollectionIII</option>
+      <!--Selected is used to create the default option the <select> will show b4 user input-->
+        </div>
+        <div>
+          <form>
+            <input type="radio" id="Private" name="CollectionRadio" value="Private" />
+            <label for="Private">Public</label><br />
+            <input type="radio" id="Public" name="CollectionRadio" value="Public" />
+            <label for="Public">Private</label><br />
+          </form>
+        </div>
+    </form>
+    <footer>
+        <p>
+          -"&copy:Copyright"<br />
+          -"Engineered by me on a dusty musty chromy :)"
+        </p>
+    </footer>
+  </body>
+</html>

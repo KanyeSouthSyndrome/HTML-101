@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>BASICTABLES</title>
+  </head>
+
+  <body>
+    <h1>What is a Computer?</h1>
+    <table>
+      <!--HTML tables allow web developers to arrange data into rows and columns.-->
+      <tr>
+        <!--Each table row starts with a <tr> and ends with a </tr> tag.-->
+        <th>what is <strong>NOT</strong> a computer?</th>
+        <!--Sometimes you want your cells to be table header cells. 
+          In those cases use the <th> tag instead of the <td> tag:-->
+        <th>what <em>is</em> a computer?</th>
+      </tr>
+      <tr>
+        <td>It is not a rabbit</td>
+        <!--Each table cell is defined by a <td> and a </td> tag.-->
+        <td>It is a thinking machine</td>
+        <!--Everything between <td> and </td> are the content of the table cell, AKA TABLE DATA.-->
+      </tr>
+    </table>
+  </body>
+</html>
+<!--USE [CTRL=CLICK] to acccess the links-->
+<!--## [Try it](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table#try_it)
+
+[Flow Content](https://www.notion.so/b6e7b25b8b2d4159999119fcead3aceb)
+
+## [Attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table#attributes)
+
+This element includes the [global attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes).
+
+### [Deprecated attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table#deprecated_attributes)
+
+**`[align](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table#attr-align)`** This enumerated attribute indicates how the table must be aligned inside the containing document. It may have the following values:
+• `left`: the table is displayed on the left side of the document;
+• `center`: the table is displayed in the center of the document;
+• `right`: the table is displayed on the right side of the document.
+Set `[margin-left](https://developer.mozilla.org/en-US/docs/Web/CSS/margin-left)` and `[margin-right](https://developer.mozilla.org/en-US/docs/Web/CSS/margin-right)` to `auto` or `[margin](https://developer.mozilla.org/en-US/docs/Web/CSS/margin)` to `0 auto` to achieve an effect that is similar to the align attribute.
+
+**`[bgcolor](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table#attr-bgcolor)`** The background color of the table. It is a [6-digit hexadecimal RGB code](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value#rgb_colors), prefixed by a '`#`'. One of the predefined [color keywords](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value#color_keywords) can also be used.
+To achieve a similar effect, use the CSS `[background-color](https://developer.mozilla.org/en-US/docs/Web/CSS/background-color)` property.
+
+**`[border](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table#attr-border)`** This integer attribute defines, in pixels, the size of the frame surrounding the table. If set to 0, the `[frame](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table#attr-frame)` attribute is set to void.
+To achieve a similar effect, use the CSS `[border](https://developer.mozilla.org/en-US/docs/Web/CSS/border)` shorthand property.
+
+**`[cellpadding](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table#attr-cellpadding)`** This attribute defines the space between the content of a cell and its border, displayed or not. If the cellpadding's length is defined in pixels, this pixel-sized space will be applied to all four sides of the cell's content. If the length is defined using a percentage value, the content will be centered and the total vertical space (top and bottom) will represent this value. The same is true for the total horizontal space (left and right).
+To achieve a similar effect, apply the `[border-collapse](https://developer.mozilla.org/en-US/docs/Web/CSS/border-collapse)` property to the `<table>` element, with its value set to collapse, and the `[padding](https://developer.mozilla.org/en-US/docs/Web/CSS/padding)` property to the `[<td>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/td)` elements.
+
+**`[cellspacing](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table#attr-cellspacing)`** This attribute defines the size of the space between two cells in a percentage value or pixels. The attribute is applied both horizontally and vertically, to the space between the top of the table and the cells of the first row, the left of the table and the first column, the right of the table and the last column and the bottom of the table and the last row.
+To achieve a similar effect, apply the `[border-spacing](https://developer.mozilla.org/en-US/docs/Web/CSS/border-spacing)` property to the `<table>` element. `border-spacing` does not have any effect if `[border-collapse](https://developer.mozilla.org/en-US/docs/Web/CSS/border-collapse)` is set to collapse.
+
+**`[frame](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table#attr-frame)`** This enumerated attribute defines which side of the frame surrounding the table must be displayed.
+To achieve a similar effect, use the `[border-style](https://developer.mozilla.org/en-US/docs/Web/CSS/border-style)` and `[border-width](https://developer.mozilla.org/en-US/docs/Web/CSS/border-width)` properties.
+
+**`[rules](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table#attr-rules)`** This enumerated attribute defines where rules, i.e. lines, should appear in a table. It can have the following values:
+• `none`, which indicates that no rules will be displayed; it is the default value;
+• `groups`, which will cause the rules to be displayed between row groups (defined by the `[<thead>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/thead)`, `[<tbody>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tbody)` and `[<tfoot>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tfoot)` elements) and between column groups (defined by the `[<col>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/col)` and `[<colgroup>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/colgroup)` elements) only;
+• `rows`, which will cause the rules to be displayed between rows;
+• `columns`, which will cause the rules to be displayed between columns;
+• `all`, which will cause the rules to be displayed between rows and columns.
+To achieve a similar effect, apply the `[border](https://developer.mozilla.org/en-US/docs/Web/CSS/border)` property to the appropriate `[<thead>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/thead)`, `[<tbody>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tbody)`, `[<tfoot>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/tfoot)`, `[<col>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/col)`, or `[<colgroup>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/colgroup)` elements.
+
+**`[summary](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table#attr-summary)`** This attribute defines an alternative text that summarizes the content of the table. Use the `[<caption>](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/caption)` element instead.
+
+**`[width](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table#attr-width)`** This attribute defines the width of the table. Use the CSS `[width](https://developer.mozilla.org/en-US/docs/Web/CSS/width)` property instead.
+
+```html
+<p>Table with colgroup and col</p>
+<table><colgroup><col style="background-color: #0f0"><col span="2"></colgroup>
+<tr>
+<th>Lime</th>
+<th>Lemon</th><
+th>Orange</th>
+</tr>
+<tr>
+<td>Green</td>
+<td>Yellow</td>
+<td>Orange</td>
+</tr>
+</table>
+```
+
+🆙Above is a basic table with a colored column-->

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>"Videos and Iframes"</title>
+  </head>
+
+  <body>
+    <div>
+      <iframe
+        src="https://www.w3schools.com"
+        title="W3Schools Free Online Web Tutorials"
+      ></iframe>
+      <!--The <iframe> tag specifies an inline frame.
+    An inline frame is used to embed another document 
+    within the current HTML document and/or external sources[ie;youtube]
+    Tip: Use CSS to style the <iframe> (see example below). 
+    Tip: It is a good practice to always include a title attribute for the <iframe>. This is used by screen readers to read out what the content of the <iframe> is.-->
+
+      <iframe
+        src="Link to video or website(for embed)"
+        frameborder="0"
+      ></iframe>
+      <!--DO NOT USE REGULAR METHOD FOR VIDEO LINK (Cntrl+c and Cntrl +v)
+    Grab the EMBED CODE as pictured below
+    example-->
+      <iframe
+        src="https://www.youtube.com/embed/MTUUGmXDJlQ"
+        title="I was a god | Mike Tyson"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+        width="1366"
+        height="599"
+      >
+      </iframe>
+      <br />
+
+      <iframe src="www.https://google.com" frameborder="0"></iframe>
+      <!--^WEBSITE-->
+    </div>
+
+    <video>
+      <source src="movie.mp4" type="video/mp4" />
+      <source src="movie.ogg" type="video/ogg" />
+    </video>
+    <!--the <video></video> tag is used to embed video files already 
+    present 
+    within the code or external videos links(cloud linked videos)-->
+  </body>
+</html>

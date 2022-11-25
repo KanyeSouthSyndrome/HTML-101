@@ -1,0 +1,49 @@
+🏋️ Exercise: More Tables & "internal linking"
+Every language, software, hardware, etc. has technical documentation for information and help.
+In this exercise, you will create a simple documentation page with "internal linking".
+(i.e. you will click a link on the left, and it will "jump" to that section of the documentation).
+
+To implement this "jump to section" behavior look at the example below:
+
+Use the id attribute (id="value") to define bookmarks in a page (i.e this will be added to each <section>)
+Use the href attribute (href="#value") to link to the bookmark (this will be added to the link in the left navbar)
+
+
+Example:
+
+Navbar (LEFT)
+
+<a href="#introduction">Introduction</a>
+
+Section (RIGHT)
+
+<section id="introduction">
+  <h3>Introduction</h3>
+  <!-- content here -->
+</section>
+    
+
+🛠 Requirements
+Must have five (5) navigation links  (which are matched to five (5) section headers)
+Use <h3> tags for the section titles
+The project should make practical use of the following elements:
+<nav>
+<a>
+<section>
+<p>
+<ul>
+<article>
+When a user clicks on an anchor tag from the left navbar, it should "jump" to that section. i.e. - If a user clicks "Topic Two", it should bring that section into view (this depends on the scroll height of the page and if the content is "out of view").
+Post a screenshot of your finished exercise in the #post-your-exercises channel of the chatroom
+
+
+💡Tips:
+Do you remember what HTML elements you used to accomplish the layout in the "MyFavs" exercise? You can take a similar approach with this exercise to achieve the layout shown below.
+Vertical alignment in a table cell (if you want your left nav to be aligned at the top like the example).
+To get the black/white section headers, add the following inline style to your <h3> tags. Example:
+<h3 style="background: black; color: white">Introduction</h3>
+
+
+
+NOTE: Your end result does not have to match the design example, just the layout (Navbar on the left, content on the right). For example the left navbar has some additional css to align it at the top and increase spacing between the content on the right.
+
